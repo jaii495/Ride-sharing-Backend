@@ -15,11 +15,11 @@ public class TripService {
     private TripRepository tripRepository;
 
     public Trip saveTrip(Trip trip) {
-        return tripRepository.save(trip); // Save the trip to the database
+        return tripRepository.save(trip);
     }
 
     public Optional<Trip> getTripById(Long id) {
-        return tripRepository.findById(id); // Retrieve a trip by its ID
+        return tripRepository.findById(id); 
     }
 
     public Trip completeTrip(Trip trip) {
