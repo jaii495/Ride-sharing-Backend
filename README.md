@@ -57,5 +57,5 @@ Before you begin, ensure you have met the following requirements:
 ## Setup Instructions
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/shiva177/ride-sharing-platform.git
+   git clone [https://github.com/shiva177/Ride-sharing-Backend.git]
    cd ride-sharing-platform
