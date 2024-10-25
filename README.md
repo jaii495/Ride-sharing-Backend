@@ -6,12 +6,12 @@
 1. [Project Overview](#project-overview)
 2. [Features](#features)
 3. [Tech Stack](#tech-stack)
-4. [Prerequisites](#prerequisites)
-5. [Setup Instructions](#setup-instructions)
-6. [Running the Project](#running-the-project)
-7. [Deployment](#deployment)
-8. [Assumptions and Limitations](#assumptions-and-limitations)
-9. [Links](#links)
+4. [CostEstimation](#CostEstimation)
+5. [Object-Oriented Programming Language](#Object-OrientedProgrammingLanguage)
+6. [Prerequisites](#prerequisites)
+7. [Setup Instructions](#setup-instructions)
+8. [Running the Project](#running-the-project)
+
 
 ## Project Overview
 This project is a Ride-Sharing Platform that enables users to share and track rides through distinct roles: Traveler, Traveler Companion, and Admin. The platform is designed to facilitate seamless ride-sharing experiences, including sharing ride details, tracking rides, and providing feedback. Built using ReactJS for the frontend, Spring Boot (Java) for the backend, and H2 Database, this application prioritizes user security and scalability.
