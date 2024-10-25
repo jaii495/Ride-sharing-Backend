@@ -131,7 +131,8 @@ public class UserController {
                 tripRequest.getSourceLatitude(), tripRequest.getSourceLongitude());
 
         // Check if the driver is within 100 meters
-        if (distance > 0.1) { // 100 meters = 0.1 kilometers
+        // 100 meters = 0.1 kilometers
+        if (distance > 0.1) { 
             return ResponseEntity.status(HttpStatus.ALREADY_REPORTED)
                     .body(null);
         }
