@@ -14,7 +14,7 @@
 9. [Links](#links)
 
 ## Project Overview
-This project is a Ride-Sharing Platform that enables users to share and track rides through distinct roles: Traveler, Traveler Companion, and Admin. The platform is designed to facilitate seamless ride-sharing experiences, including sharing ride details, tracking rides, and providing feedback. Built using ReactJS for the frontend, Spring Boot (Java) for the backend, and MySQL as the database, this application prioritizes user security and scalability.
+This project is a Ride-Sharing Platform that enables users to share and track rides through distinct roles: Traveler, Traveler Companion, and Admin. The platform is designed to facilitate seamless ride-sharing experiences, including sharing ride details, tracking rides, and providing feedback. Built using ReactJS for the frontend, Spring Boot (Java) for the backend, and H2 Database, this application prioritizes user security and scalability.
 
 ![image](https://example.com/path/to/your/image.png)
 
@@ -45,17 +45,42 @@ This project is a Ride-Sharing Platform that enables users to share and track ri
 - Spring Boot (Java) (for creating RESTful APIs)
 
 **Database:**
-- MySQL (for storing user and ride data)
+- **H2 Database**: Act as a SQL database wrapper using Spring Boot, facilitating efficient storage.
+
+### Cost Estimation
+
+- **Space Complexity**: The GET operation involves reading from the database without additional space consumption. In contrast, POST is used to send data to a server to create/update a table.
+- **Time Complexity**: The search operation for GET can take up to the number of existing versions, while the put operation, involving adding a column to the database, is executed in constant time.
+
+### **Object-Oriented Programming Language (OOPS)**
+
+- **Abstraction and Encapsulation**: Robust OOPS principles are followed, with extensive abstraction in the backend. Multiple models are created to abstract and encapsulate data storage, enhancing system organization.                                 
+- **Polymorphism**: Implemented to ensure flexibility and adaptability within the codebase.
+- **Modularization**: The code is highly modularized, enabling easy addition of new functionality. Each feature is organized into its own class, simplifying debugging and maintenance.
 
 ## Prerequisites
 Before you begin, ensure you have met the following requirements:
 - Java JDK (version 11 or higher)
+- Maven
 - Spring Boot (for backend)
 - Node.js (version 14.x or higher) and npm (for frontend)
-- MySQL server running
+- H2 database server running
 
 ## Setup Instructions
+
 1. **Clone the repository:**
    ```bash
    git clone [https://github.com/shiva177/Ride-sharing-Backend.git]
    cd ride-sharing-platform
+```
+
+2. **Build and Run the Backend:**
+
+```bash
+cd backend
+mvn clean install
+mvn spring-boot:run
+```
+
+The backend will run on **`http://localhost:8123`**.
+
